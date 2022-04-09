@@ -1,0 +1,83 @@
+<section class="center d-block">
+  <h1 class="thin tc">Sign up</h1>
+  <div class="wrapper jc-center my-container">
+    <form
+      class="externalAuthMethods"
+      action="/accounts/signin/google"
+      method="post"
+    ><img
+        class="shadow-light br-circle"
+        height="75px"
+        src="/img/google.png"
+        alt="Google image"
+      /></form>
+    <form
+      class="externalAuthMethods"
+      action="/accounts/signin/facebook"
+      method="post"
+    ><img
+        class="shadow-light br-circle"
+        height="75px"
+        src="/img/facebook.png"
+        alt="Facebook image"
+      /></form>
+    <form
+      class="externalAuthMethods"
+      action="/accounts/signin/github"
+      method="post"
+    ><img
+        class="shadow-light br-circle"
+        height="75px"
+        src="/img/github.png"
+        alt="Github image"
+      /></form>
+  </div>
+  <p class="thin tc font-normal">or continue with</p>
+  <div class="my-container">
+    <form
+      action="/accounts/signup"
+      method="post"
+      class="form-container shadow-input"
+    >
+      <input
+        class="form-input"
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Name"
+        value="{{name}}"
+      />
+      <input
+        class="form-input"
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Email"
+        value="{{email}}"
+      />
+      <input
+        type="password"
+        name="password"
+        class="form-input"
+        id="password"
+        placeholder="Password"
+        value="{{password}}"
+      />
+      <input
+        type="password"
+        class="form-input"
+        name="confirmPassword"
+        id="confirmPassword"
+        placeholder="Confirm password"
+      />
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <a
+    href="/accounts/signin"
+    class="link link-primary animation animation-fade tc d-block mb-section"
+  >Already have an account? Sign in</a>
+</section>
+
+<script src="/js/accounts.js"></script>

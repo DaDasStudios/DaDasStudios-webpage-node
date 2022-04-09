@@ -1,0 +1,16 @@
+<nav class="nav-container {{classNav}}">
+  <ul class="nav-list">
+    <li class="active main"><a href="/">DADASTUDIOS</a></li>
+    <li><a href="/products">Products</a></li>
+    <li><a href="/resources">Resources</a></li>
+    <li><a href="/pricing">Pricing</a></li>
+  </ul>
+  <ul class="nav-list">
+    {{#if user}}
+      <li><a href="/accounts/logout">Logout</a></li>
+    {{else}}
+      <li><a href="/accounts/signup">Sign Up</a></li>
+      <li><a href="/accounts/signin">Sign In</a></li>
+    {{/if}}
+  </ul>
+</nav>

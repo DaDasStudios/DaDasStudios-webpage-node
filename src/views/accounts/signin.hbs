@@ -1,0 +1,72 @@
+<section class="center d-block">
+  <h1 class="thin tc">Sign in</h1>
+  <div class="wrapper jc-center my-container">
+    <form
+      class="externalAuthMethods"
+      action="/accounts/signin/google"
+      method="post"
+    ><img
+        class="shadow-light br-circle"
+        height="75px"
+        src="/img/google.png"
+        alt="Google image"
+      /></form>
+    <form
+      class="externalAuthMethods"
+      action="/accounts/signin/facebook"
+      method="post"
+    ><img
+        class="shadow-light br-circle"
+        height="75px"
+        src="/img/facebook.png"
+        alt="Facebook image"
+      /></form>
+    <form
+      class="externalAuthMethods"
+      action="/accounts/signin/github"
+      method="post"
+    ><img
+        class="shadow-light br-circle"
+        height="75px"
+        src="/img/github.png"
+        alt="Github image"
+      /></form>
+  </div>
+  <p class="thin tc font-normal">or get logged by</p>
+  <div class="my-container">
+    <form
+      action="/accounts/signin"
+      method="post"
+      class="form-container shadow-input"
+    >
+      <input
+        class="form-input"
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Email"
+      />
+      <input
+        type="password"
+        name="password"
+        class="form-input"
+        id="password"
+        placeholder="Password"
+      />
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <div class="vertical-wrapper mb-section">
+    <a
+      href="/accounts/signin"
+      class="link link-primary animation animation-fade tc d-block"
+    >Already have an account? Sign in</a>
+    <a
+      href="/accounts/signin/recover-password"
+      class="link link-primary animation animation-fade tc d-block"
+    >Forgot your password?</a>
+  </div>
+
+</section>
+
+<script src="/js/accounts.js"></script>
