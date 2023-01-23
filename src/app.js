@@ -9,7 +9,7 @@ const passport = require("passport");
 require("dotenv").config({ path: path.join(__dirname, "../.env") });
 
 // Configurations
-app.set("port", process.env.PORT || 3000);
+app.set("port", process.env.PORT || 5000);
 app.set("views", path.join(__dirname, "views"));
 app.engine(
     ".hbs",
@@ -49,7 +49,7 @@ app.use((req, res, next) => {
 
 // Routes
 app.use(require("./routes/index"));
-app.use(require("./routes/accounts"));
+//app.use(require("./routes/accounts"));
 app.use(require("./routes/downloads"));
 
 // Public
